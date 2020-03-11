@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Empesa Juá Soluções em Tecnologias</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <h1><a href="/">Empesa Juá Soluções em Tecnologias</a></h1>
+    <p>
+     {% for noticia in information %}
+      {{ noticia }}
+    {% endfor %}
+    </p>
+  </body>
+</html>
